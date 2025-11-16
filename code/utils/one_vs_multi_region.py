@@ -4,35 +4,35 @@ import matplotlib.pyplot as plt
 from scipy import stats
 
 def print_average_metrics_with_ttest(rs_dict, mr_dict, metrics):
-    print("### MÉDIAS E TESTE T PAREADO ###\n")
+    print("### AVERAGES AND PAIRED T-TEST ###\n")
     for metric in metrics:
-        print(f"--- MÉTRICA: {metric.upper()} ---")
+        print(f"--- METRIC: {metric.upper()} ---")
         for region in rs_dict.keys():
             rs_vals = rs_dict[region][metric]
             mr_vals = mr_dict[region][metric]
 
-            # Verificar se os comprimentos batem
+            # Check if lengths match
             if len(rs_vals) != len(mr_vals):
-                print(f"Erro: Tamanhos diferentes para {region} em {metric}")
+                print(f"Error: Different lengths for {region} in {metric}")
                 continue
 
-            # Cálculo das médias
+            # Compute means
             rs_mean = sum(rs_vals) / len(rs_vals)
             mr_mean = sum(mr_vals) / len(mr_vals)
 
-            # Teste t pareado
+            # Paired t-test
             result = stats.ttest_rel(rs_vals, mr_vals)
 
-            # Impressão dos resultados
-            print(f"Região: {region}")
+            # Print results
+            print(f"Region: {region}")
             print(f"  Region-specific: {rs_mean:.4f}")
             print(f"  Multi-region:    {mr_mean:.4f}")
-            print(f"  P-valor do teste t pareado: {result.pvalue}")
+            print(f"  Paired t-test p-value: {result.pvalue}")
 
             if result.pvalue > 0.05:
-                print("Sem evidência para rejeitar H₀ (diferença não significativa)")
+                print("No evidence to reject H0 (difference not significant)")
             else:
-                print("Evidência para rejeitar H₀ (diferença significativa)")
+                print("Evidence to reject H0 (difference significant)")
 
         print()
 

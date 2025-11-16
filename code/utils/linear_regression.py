@@ -5,14 +5,14 @@ import researchpy as rp
 def linear_regression_stats(df, region):
     
     # Add intercept
-    X = df[['factor']] # variável dependente
+    X = df[['factor']] # independent variable(s)
     X = sm.add_constant(X)
     
     print(f"\nRegion tested: {region}")
     metrics = ['psnr', 'mae', 'ssim', 'msssim']
     
     for metric in metrics:
-        y = df[metric] # variável independente
+        y = df[metric] # dependent variable
         
         # Fit linear regression model
         fit_lm = sm.OLS(y, X).fit()

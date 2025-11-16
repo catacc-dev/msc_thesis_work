@@ -31,7 +31,7 @@ def generator_unet(channels, strides, type_norm, num_res_units):
     return generator
 
 
-
+'''
 channels = "64, 128, 256, 512, 512, 512, 512, 512"
 channels = list(map(int, channels.split(",")))
 strides = "2,2,2,2,2,2,2"
@@ -45,3 +45,4 @@ print(generator_simple)
 
 output=generator_simple(torch.randn(1,1,256,256))
 print(torch.unique(output))
+'''

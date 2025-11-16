@@ -68,7 +68,7 @@ for key in augmentations_to_show:
         "randgaussiannoised_prob": 0.0,
     }
     
-    # Mapeia o índice para a chave correta no dicionário
+    # Map the index to the corresponding dictionary key
     if key == 2:
         args["rand2delasticd_prob"] = 1.0
     elif key == 4:
