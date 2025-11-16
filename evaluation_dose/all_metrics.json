@@ -1,0 +1,541 @@
+{
+    "1ABA014": {
+        "patient_id": "1ABA014",
+        "MAE": 0.09289033326660338,
+        "DVH": 0.16676341503791645,
+        "OAR": [
+            "liver",
+            "spinal_cord",
+            "kidney_left"
+        ],
+        "Gamma pass rate": 90.11526624094346
+    },
+    "1ABA018": {
+        "patient_id": "1ABA018",
+        "MAE": 0.010337427551239745,
+        "DVH": 0.24441034322390787,
+        "OAR": [
+            "kidney_left",
+            "spinal_cord",
+            "liver"
+        ],
+        "Gamma pass rate": 92.09298903014728
+    },
+    "1ABA047": {
+        "patient_id": "1ABA047",
+        "MAE": 0.03866109913019929,
+        "DVH": 0.532678376037058,
+        "OAR": [
+            "liver",
+            "spinal_cord",
+            "kidney_left"
+        ],
+        "Gamma pass rate": 88.5965999741279
+    },
+    "1ABA054": {
+        "patient_id": "1ABA054",
+        "MAE": 0.014844438156624248,
+        "DVH": 0.31299078339189595,
+        "OAR": [
+            "liver",
+            "spinal_cord",
+            "kidney_left"
+        ],
+        "Gamma pass rate": 97.33035861422034
+    },
+    "1ABA084": {
+        "patient_id": "1ABA084",
+        "MAE": 0.008504329258170854,
+        "DVH": 0.046013164762668965,
+        "OAR": [
+            "kidney_left",
+            "liver",
+            "spinal_cord"
+        ],
+        "Gamma pass rate": 98.14297787570553
+    },
+    "1ABA114": {
+        "patient_id": "1ABA114",
+        "MAE": 0.007044927946004226,
+        "DVH": 0.32348291749425395,
+        "OAR": [
+            "liver",
+            "kidney_right",
+            "spinal_cord"
+        ],
+        "Gamma pass rate": 96.44663234653943
+    },
+    "1ABB059": {
+        "patient_id": "1ABB059",
+        "MAE": 0.007234110005010938,
+        "DVH": 0.020537012311175128,
+        "OAR": [
+            "liver",
+            "kidney_left",
+            "kidney_right"
+        ],
+        "Gamma pass rate": 99.31991186341489
+    },
+    "1ABB069": {
+        "patient_id": "1ABB069",
+        "MAE": 0.025043149898602846,
+        "DVH": 0.16840535368365023,
+        "OAR": [
+            "liver",
+            "kidney_left",
+            "spinal_cord"
+        ],
+        "Gamma pass rate": 96.31931247215658
+    },
+    "1ABB070": {
+        "patient_id": "1ABB070",
+        "MAE": 0.021072897361122864,
+        "DVH": 0.9927250144345955,
+        "OAR": [
+            "liver",
+            "kidney_left",
+            "spinal_cord"
+        ],
+        "Gamma pass rate": 69.86933560429121
+    },
+    "1ABB084": {
+        "patient_id": "1ABB084",
+        "MAE": 0.02460785358374549,
+        "DVH": 0.21944046775103093,
+        "OAR": [
+            "liver",
+            "spinal_cord",
+            "kidney_left"
+        ],
+        "Gamma pass rate": 94.4170591083139
+    },
+    "1ABB115": {
+        "patient_id": "1ABB115",
+        "MAE": 0.016729758843470773,
+        "DVH": 0.08043992400097552,
+        "OAR": [
+            "liver",
+            "kidney_left",
+            "spinal_cord"
+        ],
+        "Gamma pass rate": 96.65316817532158
+    },
+    "1ABB123": {
+        "patient_id": "1ABB123",
+        "MAE": 0.008689484891127992,
+        "DVH": 0.07280446935003919,
+        "OAR": [
+            "liver",
+            "spinal_cord",
+            "kidney_left"
+        ],
+        "Gamma pass rate": 98.30228759552806
+    },
+    "1ABB132": {
+        "patient_id": "1ABB132",
+        "MAE": 0.049921960038075516,
+        "DVH": 0.9117142462060218,
+        "OAR": [
+            "liver",
+            "spinal_cord",
+            "kidney_right"
+        ],
+        "Gamma pass rate": 90.25431091270485
+    },
+    "1ABB151": {
+        "patient_id": "1ABB151",
+        "MAE": 0.02603295902972725,
+        "DVH": 0.39344707847592686,
+        "OAR": [
+            "liver",
+            "spinal_cord",
+            "kidney_left"
+        ],
+        "Gamma pass rate": 93.97370607344995
+    },
+    "1ABB168": {
+        "patient_id": "1ABB168",
+        "MAE": 0.03038676531590429,
+        "DVH": 0.5241356097036813,
+        "OAR": [
+            "liver",
+            "kidney_left",
+            "spinal_cord"
+        ],
+        "Gamma pass rate": 87.90541365488441
+    },
+    "1ABC127": {
+        "patient_id": "1ABC127",
+        "MAE": 0.055094936592468655,
+        "DVH": 0.5987791117327962,
+        "OAR": [
+            "liver",
+            "kidney_right",
+            "spinal_cord"
+        ],
+        "Gamma pass rate": 90.19677185346391
+    },
+    "1HNA010": {
+        "patient_id": "1HNA010",
+        "MAE": 0.00906477626113565,
+        "DVH": 0.3998762925712434,
+        "OAR": [
+            "masseter_right",
+            "masseter_left",
+            "parotid_gland_right"
+        ],
+        "Gamma pass rate": 97.38881222800127
+    },
+    "1HNA038": {
+        "patient_id": "1HNA038",
+        "MAE": 0.009064320697276277,
+        "DVH": 0.28713099237036976,
+        "OAR": [
+            "masseter_right",
+            "superior_pharyngeal_constrictor",
+            "masseter_left"
+        ],
+        "Gamma pass rate": 96.81086109657538
+    },
+    "1HNA061": {
+        "patient_id": "1HNA061",
+        "MAE": 0.006791590052755581,
+        "DVH": 0.40781733529621045,
+        "OAR": [
+            "masseter_left",
+            "parotid_gland_right",
+            "superior_pharyngeal_constrictor"
+        ],
+        "Gamma pass rate": 99.02768909270331
+    },
+    "1HNA085": {
+        "patient_id": "1HNA085",
+        "MAE": 0.006392513375527552,
+        "DVH": 0.13299179188579574,
+        "OAR": [
+            "masseter_left",
+            "superior_pharyngeal_constrictor",
+            "masseter_right"
+        ],
+        "Gamma pass rate": 99.77814467031266
+    },
+    "1HNA096": {
+        "patient_id": "1HNA096",
+        "MAE": 0.005747620476251314,
+        "DVH": 0.36166126382326647,
+        "OAR": [
+            "masseter_right",
+            "masseter_left",
+            "superior_pharyngeal_constrictor"
+        ],
+        "Gamma pass rate": 98.85642539617903
+    },
+    "1HNA115": {
+        "patient_id": "1HNA115",
+        "MAE": 0.007196434411592937,
+        "DVH": 0.21234623570664268,
+        "OAR": [
+            "submandibular_gland_left",
+            "masseter_left",
+            "superior_pharyngeal_constrictor"
+        ],
+        "Gamma pass rate": 98.95258884803921
+    },
+    "1HNA116": {
+        "patient_id": "1HNA116",
+        "MAE": 0.006588989735953745,
+        "DVH": 0.2893199636683226,
+        "OAR": [
+            "masseter_left",
+            "parotid_gland_left",
+            "masseter_right"
+        ],
+        "Gamma pass rate": 99.56285518016611
+    },
+    "1HNA117": {
+        "patient_id": "1HNA117",
+        "MAE": 0.007399526010472848,
+        "DVH": 0.37143066654181944,
+        "OAR": [
+            "masseter_left",
+            "masseter_right",
+            "submandibular_gland_right"
+        ],
+        "Gamma pass rate": 98.86747561265763
+    },
+    "1HNA124": {
+        "patient_id": "1HNA124",
+        "MAE": 0.004943098451912502,
+        "DVH": 0.20792718802370577,
+        "OAR": [
+            "masseter_right",
+            "parotid_gland_left",
+            "submandibular_gland_left"
+        ],
+        "Gamma pass rate": 99.3931423883406
+    },
+    "1HNC017": {
+        "patient_id": "1HNC017",
+        "MAE": 0.006358363870934217,
+        "DVH": 0.2608291704718362,
+        "OAR": [
+            "masseter_right",
+            "masseter_left",
+            "parotid_gland_right"
+        ],
+        "Gamma pass rate": 99.74872721300706
+    },
+    "1HNC025": {
+        "patient_id": "1HNC025",
+        "MAE": 0.014451402551152293,
+        "DVH": 1.379944015946649,
+        "OAR": [
+            "parotid_gland_left",
+            "superior_pharyngeal_constrictor",
+            "masseter_right"
+        ],
+        "Gamma pass rate": 95.77643888703867
+    },
+    "1HNC036": {
+        "patient_id": "1HNC036",
+        "MAE": 0.004183228074958699,
+        "DVH": 0.2807801239870887,
+        "OAR": [
+            "masseter_left",
+            "superior_pharyngeal_constrictor",
+            "masseter_right"
+        ],
+        "Gamma pass rate": 99.08403889045279
+    },
+    "1HNC037": {
+        "patient_id": "1HNC037",
+        "MAE": 0.006983387736584966,
+        "DVH": 0.2350794645100401,
+        "OAR": [
+            "superior_pharyngeal_constrictor",
+            "submandibular_gland_right",
+            "parotid_gland_right"
+        ],
+        "Gamma pass rate": 98.45958990860234
+    },
+    "1HNC043": {
+        "patient_id": "1HNC043",
+        "MAE": 0.00879607990749855,
+        "DVH": 0.25958663123306597,
+        "OAR": [
+            "masseter_left",
+            "masseter_right",
+            "parotid_gland_right"
+        ],
+        "Gamma pass rate": 97.71494543315835
+    },
+    "1HNC099": {
+        "patient_id": "1HNC099",
+        "MAE": 0.005762580090673371,
+        "DVH": 0.19583385151569502,
+        "OAR": [
+            "superior_pharyngeal_constrictor",
+            "submandibular_gland_left",
+            "submandibular_gland_right"
+        ],
+        "Gamma pass rate": 99.33257316609654
+    },
+    "1THA022": {
+        "patient_id": "1THA022",
+        "MAE": 0.03239812846225914,
+        "DVH": 0.42298743695697033,
+        "OAR": [
+            "lung_middle_lobe_right",
+            "lung_lower_lobe_right",
+            "lung_upper_lobe_left"
+        ],
+        "Gamma pass rate": 81.018377529985
+    },
+    "1THA028": {
+        "patient_id": "1THA028",
+        "MAE": 0.04171901887124749,
+        "DVH": 0.644702546197726,
+        "OAR": [
+            "esophagus",
+            "lung_lower_lobe_right",
+            "lung_middle_lobe_right"
+        ],
+        "Gamma pass rate": 65.40840082964257
+    },
+    "1THA041": {
+        "patient_id": "1THA041",
+        "MAE": 0.02828198649673112,
+        "DVH": 0.6506523880052149,
+        "OAR": [
+            "esophagus",
+            "lung_lower_lobe_right",
+            "spinal_cord"
+        ],
+        "Gamma pass rate": 77.41372559445833
+    },
+    "1THA203": {
+        "patient_id": "1THA203",
+        "MAE": 0.10421709264013743,
+        "DVH": 0.4096833717345517,
+        "OAR": [
+            "esophagus",
+            "lung_middle_lobe_right",
+            "lung_lower_lobe_right"
+        ],
+        "Gamma pass rate": 61.41195977926375
+    },
+    "1THA221": {
+        "patient_id": "1THA221",
+        "MAE": 0.1615332312358597,
+        "DVH": 1.0595880006083258,
+        "OAR": [
+            "esophagus",
+            "lung_middle_lobe_right",
+            "lung_lower_lobe_right"
+        ],
+        "Gamma pass rate": 44.10262667108222
+    },
+    "1THA244": {
+        "patient_id": "1THA244",
+        "MAE": 0.02078171337660423,
+        "DVH": 0.2388753085990833,
+        "OAR": [
+            "esophagus",
+            "lung_lower_lobe_right",
+            "lung_middle_lobe_right"
+        ],
+        "Gamma pass rate": 88.28264032420213
+    },
+    "1THA252": {
+        "patient_id": "1THA252",
+        "MAE": 0.08901669042600067,
+        "DVH": 1.09975337652174,
+        "OAR": [
+            "esophagus",
+            "lung_lower_lobe_right",
+            "lung_upper_lobe_left"
+        ],
+        "Gamma pass rate": 54.61511017481864
+    },
+    "1THA270": {
+        "patient_id": "1THA270",
+        "MAE": 0.036043689563822735,
+        "DVH": 0.4036676160412218,
+        "OAR": [
+            "lung_lower_lobe_right",
+            "lung_middle_lobe_right",
+            "esophagus"
+        ],
+        "Gamma pass rate": 76.04698071890957
+    },
+    "1THA291": {
+        "patient_id": "1THA291",
+        "MAE": 0.01965205894320998,
+        "DVH": 0.20842345261122833,
+        "OAR": [
+            "lung_lower_lobe_right",
+            "lung_middle_lobe_right",
+            "spinal_cord"
+        ],
+        "Gamma pass rate": 84.58626932429314
+    },
+    "1THB003": {
+        "patient_id": "1THB003",
+        "MAE": 0.0717923336310621,
+        "DVH": 0.6131783257747601,
+        "OAR": [
+            "esophagus",
+            "lung_lower_lobe_right",
+            "lung_middle_lobe_right"
+        ],
+        "Gamma pass rate": 53.567354355902
+    },
+    "1THB103": {
+        "patient_id": "1THB103",
+        "MAE": 0.29494739019785365,
+        "DVH": 1.4776487948258417,
+        "OAR": [
+            "lung_middle_lobe_right",
+            "lung_lower_lobe_right",
+            "lung_upper_lobe_left"
+        ],
+        "Gamma pass rate": 69.519159278489
+    },
+    "1THB135": {
+        "patient_id": "1THB135",
+        "MAE": 0.7124885289534119,
+        "DVH": 1.439613931604511,
+        "OAR": [
+            "lung_lower_lobe_right",
+            "lung_lower_lobe_left",
+            "esophagus"
+        ],
+        "Gamma pass rate": 61.299533822693654
+    },
+    "1THB191": {
+        "patient_id": "1THB191",
+        "MAE": 0.026261089300495824,
+        "DVH": 0.3716078116629803,
+        "OAR": [
+            "lung_middle_lobe_right",
+            "esophagus",
+            "lung_lower_lobe_right"
+        ],
+        "Gamma pass rate": 71.47960556722381
+    },
+    "1THB195": {
+        "patient_id": "1THB195",
+        "MAE": 0.021315213013842607,
+        "DVH": 0.6063176028120583,
+        "OAR": [
+            "lung_lower_lobe_right",
+            "lung_middle_lobe_right",
+            "esophagus"
+        ],
+        "Gamma pass rate": 64.90841428978071
+    },
+    "1THB202": {
+        "patient_id": "1THB202",
+        "MAE": 0.026766601834688784,
+        "DVH": 0.14525705867317323,
+        "OAR": [
+            "lung_lower_lobe_right",
+            "spinal_cord",
+            "lung_middle_lobe_right"
+        ],
+        "Gamma pass rate": 85.70691020225117
+    },
+    "1THB210": {
+        "patient_id": "1THB210",
+        "MAE": 0.07192212794620244,
+        "DVH": 0.48730850259807146,
+        "OAR": [
+            "lung_middle_lobe_right",
+            "esophagus",
+            "lung_lower_lobe_right"
+        ],
+        "Gamma pass rate": 51.979955085620134
+    },
+    "1THB211": {
+        "patient_id": "1THB211",
+        "MAE": 0.018115922537910622,
+        "DVH": 0.705873644814117,
+        "OAR": [
+            "esophagus",
+            "lung_lower_lobe_right",
+            "lung_middle_lobe_right"
+        ],
+        "Gamma pass rate": 76.63858275082062
+    },
+    "1THB222": {
+        "patient_id": "1THB222",
+        "MAE": 0.02182144704344808,
+        "DVH": 0.20479766226332058,
+        "OAR": [
+            "lung_lower_lobe_right",
+            "lung_middle_lobe_right",
+            "esophagus"
+        ],
+        "Gamma pass rate": 76.72860140165655
+    }
+}
