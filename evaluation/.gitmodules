@@ -1,0 +1,7 @@
+[submodule "TotalSegmentator"] 
+	path = TotalSegmentator 
+	url = https://github.com/wasserth/TotalSegmentator.git
+
+[submodule "nnUNet"]
+	path = nnUNet
+	url = https://github.com/MIC-DKFZ/nnUNet.git

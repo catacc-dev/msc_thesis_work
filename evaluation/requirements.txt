@@ -1,0 +1,16 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+SimpleITK
+numpy
+scikit-image
+nibabel
+pandas
+p_tqdm
+requests
+acvl_utils
+dynamic_network_architectures
+dicom2nifti
+batchgeneratorsv2
+matplotlib
+seaborn
+monai
