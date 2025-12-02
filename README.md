@@ -101,7 +101,7 @@ venv\Scripts\activate         # Windows
 pip install -r requirements.txt
 ```
 
-### Usage
+### Usage - code folder
 
 **1. Perform 5-fold cross-validation to save model gradients at the epoch with minimal MAE loss**
 
@@ -206,6 +206,11 @@ python -m test.test_ensemble \
     --model_state "G_state_dict"
 ```
 
+4. Evaluate geometric metrics in the docker file
+
+```bash
+NPROCS=1 CUDA_VISIBLE_DEVICES=3 uv run evaluate-local.py 
+```
 
 ## Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
