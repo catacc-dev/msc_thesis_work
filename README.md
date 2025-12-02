@@ -9,7 +9,6 @@ This repository contains training and evaluation scripts, models, and utilities 
 - 📄 [**Thesis (PDF)**](docs/Master%20Thesis%20Final%20-%20Catarina%20Caldeira.pdf)
 - 🎯 [**Presentation (PDF)**](docs/Master%20Thesis%20Presentation%20-%20Catarina%20Caldeira.pdf)
 
----
 
 <details>
 <summary>Table of Contents</summary>
@@ -119,6 +118,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 - **Evaluation framework:** Adapted from [SynthRAD2025 evaluation](https://github.com/SynthRAD2025/evaluation)
 - **Discriminator architecture:** Based on [Pix2Pix](https://arxiv.org/abs/1611.07004)
 - **Dose calculation framework:** [matRad](https://github.com/e0404/matRad)
+
 
 
 
