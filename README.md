@@ -103,7 +103,7 @@ pip install -r requirements.txt
 
 ### Usage
 
-1. Perform 5-fold cross-validation to save model gradients at the epoch with minimal MAE loss
+**1. Perform 5-fold cross-validation to save model gradients at the epoch with minimal MAE loss**
 
 -> Autoencoder
 
@@ -158,7 +158,7 @@ python -m models.cgan_model \
     --type_norm "BATCH"
 ```
 
-2.  Selecting optimal hyperparameters combination based on the average PSNR, MAE, SSIM, and MS-SSIM scores across the 5 cross-validation models
+**2.  Selecting optimal hyperparameter combinations based on the average PSNR, MAE, SSIM, and MS-SSIM scores across the 5 cross-validation models**
 
 -> Autoencoder
 
@@ -189,7 +189,7 @@ python -m validations.best_model_ae \
     --file_format "mha"
 ```
 
-3. Test the best ensemble of models (for both Autoencoder and cGAN)
+**3. Test the best ensemble of models (for both Autoencoder and cGAN)**
 
 ```bash
 python -m test.test_ensemble \
@@ -225,6 +225,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 - **Evaluation framework:** Adapted from [SynthRAD2025 evaluation](https://github.com/SynthRAD2025/evaluation)
 - **Discriminator architecture:** Based on [Pix2Pix](https://arxiv.org/abs/1611.07004)
 - **Dose calculation framework:** [matRad](https://github.com/e0404/matRad)
+
 
 
 
