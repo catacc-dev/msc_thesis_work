@@ -17,6 +17,7 @@ This repository contains training and evaluation scripts, models, and utilities 
     - [Repository Structure](#repository-structure)
 2. [Getting Started](#getting-started)
    - [Installation](#installation)
+   - [Usage](#usage)
 3. [Contributing](#contributing)
 4. [Acknowledgements](#acknowledgements)
 
@@ -29,9 +30,9 @@ This project explores conditional generative models for medical image synthesis 
 - **Model exploration:** Compare general (multi-region) and anatomy-specific (region-specific) 2D deep learning models for MRI-to-CT synthesis using the SynthRAD2025 dataset after HP search in SynthRAD2023.
 - **Clinical application:** Generate synthetic CT volumes suitable for treatment planning in three anatomical regions: head & neck (HN), thorax (TH), and abdomen (AB).
 - **Multi-domain evaluation:** Assess synthetic CT quality across three complementary domains:
-  - *Image quality metrics*: PSNR, MAE, SSIM, MS-SSIM (pixel-level fidelity)
-  - *Geometric consistency*: Segmentation-based metrics (Dice, Hausdorff distance) on anatomical structures
-  - *Clinical feasibility*: Dose calculation accuracy using proton therapy treatment plans
+  - *Image quality metrics*: PSNR, MAE, SSIM, MS-SSIM (pixel-level fidelity).
+  - *Geometric consistency*: Segmentation-based metrics (Dice, Hausdorff distance) on anatomical structures.
+  - *Clinical feasibility*: Dose calculation metrics (MAE, DVH, Gamma pass rate) using proton therapy treatment plans.
 
 ### Repository Structure
 
@@ -99,6 +100,112 @@ venv\Scripts\activate         # Windows
 ```bash
 pip install -r requirements.txt
 ```
+
+### Usage
+
+1. Perform 5-fold cross-validation to save model gradients at the epoch with minimal MAE loss
+
+-> Autoencoder
+
+```bash
+python -m models.autoencoder_model \
+    --dataset_path /path/to/dataset \
+    --epoch_start 0 \
+    --n_epochs 99 \
+    --dataset_name "SynthRAD2023" \
+    --batch_size_train 32 \
+    --batch_size_val 1 \
+    --lr 0.0005 \
+    --b1 0.9 \
+    --b2 0.999 \
+    --result "experiment_name" \
+    --subsample_rate 2 \
+    --checkpoint_interval 100 \
+    --channels "64, 128, 256, 512, 512" \
+    --strides "2, 2, 2, 2" \
+    --num_res_units 0 \
+    --type_norm "INSTANCE" \
+    --choosen_region "AB"
+```
+
+-> cGAN
+
+```bash
+python -m models.cgan_model \
+    --dataset_path /path/to/dataset \
+    --best_model_path "model_checkpoint" \
+    --epoch_start 0 \
+    --n_epochs [number_of_epochs] \
+    --dataset_name "SynthRAD2023" \
+    --batch_size_train 32 \
+    --batch_size_val 1 \
+    --lr [learning_rate] \
+    --lr_d [discriminator_learning_rate] \
+    --b1 0.5 \
+    --b2 0.999 \
+    --checkpoint_interval 100 \
+    --result "experiment_name" \
+    --subsample_rate 7 \
+    --perceptual_loss [True/False] \
+    --apply_da [True/False] \
+    --lambda_pixel 100 \
+    --lambda_adversarial 1 \
+    --lambda_pl [perceptual_loss_weight] \
+    --label_smoothing [True/False] \
+    --channels "64, 128, 256, 512, 512" \
+    --strides "2, 2, 2, 2" \
+    --num_res_units 0 \
+    --type_norm "BATCH"
+```
+
+2.  Selecting optimal hyperparameters combination based on the average PSNR, MAE, SSIM, and MS-SSIM scores across the 5 cross-validation models
+
+-> Autoencoder
+
+```bash
+python -m validations.best_model_ae \
+    --dataset_path /path/to/dataset \
+    --best_models_path /best/models/path
+    --batch_size_val 1 \
+    --channels "64, 128, 256, 512, 512" \
+    --strides "2, 2, 2, 2" \
+    --num_res_units 0 \
+    --type_norm "INSTANCE" \
+    --ending_saved_model "0-99.pth"
+```
+
+-> cGAN
+
+```bash
+python -m validations.best_model_ae \
+    --dataset_path /path/to/dataset \
+    --best_models_path /best/models/path
+    --batch_size_val 1 \
+    --channels "64, 128, 256, 512, 512" \
+    --strides "2, 2, 2, 2" \
+    --num_res_units 0 \
+    --type_norm "INSTANCE" \
+    --ending_saved_model "0-99.pth" \
+    --file_format "mha"
+```
+
+3. Test the best ensemble of models (for both Autoencoder and cGAN)
+
+```bash
+python -m test.test_ensemble \
+    --dataset_path /path/to/dataset \
+    --best_models_path /best/models/path
+    --batch_size_test 1 \
+    --channels "64, 128, 256, 512, 512" \
+    --strides "2, 2, 2, 2" \
+    --num_res_units 0 \
+    --type_norm "INSTANCE" \
+    --ending_saved_model "0-99.pth" \
+    --file_format "mha" \
+    --tested_in "AB" \
+    --model_state "G_state_dict"
+```
+
 
 ## Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.

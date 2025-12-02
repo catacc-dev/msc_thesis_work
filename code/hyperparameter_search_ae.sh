@@ -1,8 +1,8 @@
 
+# --- SynthRAD 2023
+
 # 5 layers
 #python -m validations.best_model_ae --ending_saved_model "0-199.pth" --channels "64, 128, 256, 512, 512" --strides "2,2,2,2" --num_res_units 0 --type_norm BATCH --best_models_path /home/catarina_caldeira/Desktop/code/validations/saved_models/SynthRAD2023/generator/5layers_unet_BN_200_lr_0.001  > log_metrics_5layers_unet_BN_200_lr_0.001.txt
-
-
 # 6 layers
 #python -m models.autoencoder_model --result 6layers_unet_BN_200_lr_0.001 --lr 0.001 --channels "64, 128, 256, 512, 512, 512" --strides "2,2,2,2,2" --batch_size_train 32 --n_epochs 200 --type_norm BATCH --num_res_units 0
 # 7 layers
