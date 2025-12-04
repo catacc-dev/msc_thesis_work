@@ -206,7 +206,7 @@ python -m test.test_ensemble \
     --model_state "G_state_dict"
 ```
 
-**4. Evaluate geometric metrics in the Docker file**
+**4. Evaluate geometric metrics with SynthRAD2025 challenge repository**
 
 ```bash
 NPROCS=1 CUDA_VISIBLE_DEVICES=3 uv run evaluate-local.py 
@@ -230,6 +230,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 - **Evaluation framework:** Adapted from [SynthRAD2025 evaluation](https://github.com/SynthRAD2025/evaluation)
 - **Discriminator architecture:** Based on [Pix2Pix](https://arxiv.org/abs/1611.07004)
 - **Dose calculation framework:** [matRad](https://github.com/e0404/matRad)
+
 
 
 
