@@ -101,7 +101,7 @@ venv\Scripts\activate         # Windows
 pip install -r requirements.txt
 ```
 
-### Usage - code folder
+### Usage
 
 **1. Perform 5-fold cross-validation to save model gradients at the epoch with minimal MAE loss**
 
@@ -230,6 +230,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 - **Evaluation framework:** Adapted from [SynthRAD2025 evaluation](https://github.com/SynthRAD2025/evaluation)
 - **Discriminator architecture:** Based on [Pix2Pix](https://arxiv.org/abs/1611.07004)
 - **Dose calculation framework:** [matRad](https://github.com/e0404/matRad)
+
 
 
 
